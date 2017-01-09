@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8"/>
+	<title>Service App</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="ApplicationController">
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" ui-sref="index"><font class="menu">图片工具</font></a>
+		</div>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<login-show></login-show>
+	<div class="row">
+		<uib-accordion  class="col-md-2" close-others="true">
+			<div uib-accordion-group class="panel-default" is-open="menu.base.isOpen">
+				<uib-accordion-heading>
+					<div class="menu">展示&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menu.base.isOpen, 'glyphicon-chevron-right': !menu.base.isOpen}"></i>
+					</div>
+				</uib-accordion-heading>
+				<div class="list-group">
+					<a ui-sref="list" class="list-group-item" ng-class="{active:urlActive('/base/list')}">url批量展示</a>
+				</div>
+			</div>
+		</uib-accordion>
+		<div class="col-md-10" ui-view=""></div>
+	</div>
+
+<!-外部依赖->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-cookies/angular-cookies.min.js"></script>
+<script src="lib/angular-messages/angular-messages.min.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="lib/highcharts/highcharts.js"></script>
+<script src="lib/highcharts-ng/dist/highcharts-ng.js"></script>
+
+<!-内部依赖->
+<script src="js/app.js"></script>
+<script src="js/controllers/MyCtrl.js"></script>
+<script src="js/services/MyService.js"></script>
+<script src="js/directives/MyDirective.js"></script>
+</body>
+
+</html>

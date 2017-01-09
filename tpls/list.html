@@ -1,0 +1,16 @@
+<div class="page-content">
+        <form class="form-horizontal page-head" role="form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">URL列表</label>
+                <div class="col-sm-9">
+                    <textarea rows="10" placeholder="请输入图片url并用换行分割" ng-model="formData.urls" style="width: 100%"></textarea>
+                </div>
+                <div class="col-sm-1">
+                    <button type="button" ng-click="getImgs()" class="btn btn-xs btn-primary">刷新</button>
+                </div>
+            </div>
+        </form>
+    <ul ng-repeat="url in urlArr track by $index">
+        <li>{{$index}} : <img ng-src="{{url}}" style="height: 300px;width: 400px"/> </li>
+    </ul>
+</div>

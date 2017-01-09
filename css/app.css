@@ -1,0 +1,36 @@
+/* app css stylesheet */
+html,body{
+    height:100%;
+    margin: auto;
+}
+div{
+    margin: 0px;
+    margin: auto;
+}
+.menu {
+    color:#2b669a;
+}
+
+
+.app-foot{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.page-content{
+    min-height:400px;
+    height: auto;
+    margin: 0px 40px 70px 20px ;
+    border-top: 1px solid #dee5e7;
+    padding-top: 20px;
+}
+.page-foot{
+    position:absolute;right:200px;bottom:0px;
+}
+
+.page-head{
+    margin-bottom: 20px;
+}
+
+

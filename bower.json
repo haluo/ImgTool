@@ -1,0 +1,28 @@
+{
+  "name": "angularj",
+  "authors": [
+    "layman <zhufeng3612@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.1",
+    "angular-bootstrap": "^2.2.0",
+    "angular": "angularjs#^1.5.8",
+    "angular-messages": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-cookies": "^1.5.8",
+    "highcharts-ng": "^0.0.13",
+    "highcharts": "^5.0.2"
+  }
+}
